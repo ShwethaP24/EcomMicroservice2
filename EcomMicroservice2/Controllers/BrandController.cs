@@ -8,6 +8,7 @@ namespace EcomMicroservice2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AddHeader("Access-Control-Allow-Origin", "*")]
     public class BrandController : ControllerBase
     {
         public IConfiguration Configuration { get; }
